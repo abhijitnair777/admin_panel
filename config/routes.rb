@@ -1,7 +1,11 @@
 Rails.application.routes.draw do
   root to: 'homepages#index'
   
-  resources :books, only: [:index, :show]
+  resources :books, only: [:index, :show] do
+  	collection do
+  	  get 'show_multiple'
+  	end  
+  end	
 
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)

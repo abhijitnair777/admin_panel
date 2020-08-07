@@ -29,7 +29,7 @@ gem 'jbuilder', '~> 2.7'
 gem 'bootsnap', '>= 1.4.2', require: false
 
 gem 'jquery-rails'
-gem 'bootstrap', '~> 4.5.0'
+gem 'bootstrap', '~> 4.1.3'
 gem 'activeadmin'
 gem 'devise'
 gem 'ngrok-tunnel'
