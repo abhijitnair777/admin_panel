@@ -30,12 +30,16 @@ gem 'bootsnap', '>= 1.4.2', require: false
 
 gem 'jquery-rails'
 gem 'bootstrap', '~> 4.1.3'
+gem "font-awesome-rails"
+
 gem 'activeadmin'
 gem 'devise'
+
 gem 'ngrok-tunnel'
 gem 'wicked_pdf'
 gem 'wkhtmltopdf-binary'
 gem 'whenever', require: false
+gem 'searchkick'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
