@@ -40,6 +40,9 @@ gem 'wicked_pdf'
 gem 'wkhtmltopdf-binary'
 gem 'whenever', require: false
 gem 'searchkick'
+gem 'combine_pdf'
+
+gem 'rails-i18n', '~> 6.0.0' 
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

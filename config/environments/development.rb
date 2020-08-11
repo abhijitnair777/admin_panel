@@ -77,4 +77,6 @@ Rails.application.configure do
   }
 
   config.assets.precompile += ['books.scss']
+
+  config.assets.paths << Rails.root.join('app', 'assets', 'PDF')
 end

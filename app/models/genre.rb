@@ -1,5 +1,9 @@
 class Genre < ApplicationRecord
-  has_many :books	
+  has_many :books
 
-  searchkick
+  after_commit :reindex_book
+
+  def reindex_book
+    book.reindex # or reindex_async
+  end
 end

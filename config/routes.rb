@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   
   resources :books, only: [:index, :show] do
   	collection do
-  	  get 'show_multiple'
+  	  put 'show_multiple'
   	end  
   end	
 
