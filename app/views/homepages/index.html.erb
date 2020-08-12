@@ -1,5 +1,6 @@
 <h1><%= t 'welcome' %></h1>
-
+<p><%= t 'services_html' %></p>
+<!-- 
 <h3>
   <%= link_to "Admin", new_admin_user_session_path %>	
 </h3>
@@ -7,3 +8,14 @@
 <h3>
   <%= link_to "Books", books_path %>	
 </h3>
+ -->
+
+<ul>
+  <li><%= link_to t('global.menu.admin'), new_admin_user_session_path %></li>
+  <li><%= link_to t('global.menu.book'), books_path %></li>
+</ul>
+<hr>
+<ul>
+  <li><%= link_to 'English', root_path(locale: :en) %></li>
+  <li><%= link_to 'Русский', root_path(locale: :ru) %></li>
+</ul>

@@ -30,4 +30,31 @@
 # available at https://guides.rubyonrails.org/i18n.html.
 
 en:
-  welcome: "Welcome!"
+  activerecord:
+    models:
+      book: "Book"
+    attributes:
+      book:
+        name: "Book name"
+        author: "Your name"
+        genre: "Genre name"
+
+  global:
+    forms:
+      messages:
+        errors:
+          one: "One error prohibited this book from being saved"
+          other: "%{count} errors prohibited this book from being saved"
+      submit: Submit
+    menu:
+      admin: "admin"
+      book: "books"
+  books:
+    new:
+      name: "Book"
+    index:
+      author: "author" 
+  homepages:
+    index:
+      welcome: "Welcome!"
+      services_html: "We provide some fancy services to <em>good people</em>."
