@@ -1,0 +1,69 @@
+<div class="invoice-box">
+        <table cellpadding="0" cellspacing="0">
+          <tr class="top">
+            <td colspan="4">
+              <table>
+                <tr>
+                  <td class="title">
+                    <%= image_tag wicked_pdf_asset_base64('logo.png') %>
+                  </td>
+
+                  <td>
+                    Book #: <b><%= @book.id %></b>
+                    <br>
+                    Created At: <b><%= @book.created_at.strftime('%d/%m/%Y') %></b>
+                    <br>
+                    <br>
+                    Status: <b>Completed</b>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+ <tr class="information">
+            <td colspan="4">
+              <table>
+                <tr>
+                  <td>
+                    <b><%= @book.author.first_name %> <%= @book.author.last_name %></b><br>
+                    <i class="far fa-envelope"></i><%= @book.author.email %><br>
+                    <i class="fas fa-phone"> </i><%= @book.author.mobile %></b>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+          <tr class="heading">
+            <td>Book</td>
+            <td class="right">Price</td>
+          </tr>
+
+            <tr class="item">
+                <td>
+                    <%= @book.name %><br>
+                    <small><%= @book.genre.name %></small>
+                </td>
+
+                <td class="right">
+                    <%= @book.price %>
+                </td>
+            </tr>
+
+          <tr>
+            <td colspan="4"></td>
+          </tr>
+
+         <h3>
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+        </h3>
+
+        <div class="fix">
+          <p> Mat déiwem</p> 
+          <%= image_tag wicked_pdf_asset_base64('signature.png') %> 
+          <p>CLEMENT Sven</p>
+        </div>
+</div>
+
+<%= render "books/footer" %>

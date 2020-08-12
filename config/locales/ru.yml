@@ -1,0 +1,30 @@
+ru:
+  activerecord:
+    models:
+      book: "Отзывы"
+    attributes:
+      book:
+        name: "имя"
+        author: "Ваше имя"
+        genre: "Genre имя"
+
+  global:
+    forms:
+      messages:
+        errors:
+          one: "Не удалось сохранить отзыв! Найдена одна ошибка:"
+          other: "Не удалось сохранить отзыв! Найдена %{count} ошибка:"
+      submit: Submit
+    menu:
+      admin: "для админа"
+      book: "кни́жка"
+  books:
+    new:
+      name: "Отзывы"
+    index:
+      Book_Name: "кни́жка имя"
+      author: "имяr"  
+  homepages:
+    index:
+      welcome: "Добро пожаловать"
+      services_html: "Мы предоставляем услуги для <em>хороших людей</em>."

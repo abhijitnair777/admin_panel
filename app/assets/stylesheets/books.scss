@@ -1,0 +1,100 @@
+
+// Place all the styles related to the books controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+
+.invoice-box {
+    max-width: 90%;
+    max-height: 200%;
+    margin: auto;
+    padding: 30px;
+    border: 1px solid #eee;
+    box-shadow: 0 0 5px rgba(0, 0, 0, .10);
+    font-size: 16px;
+    line-height: 24px;
+    font-family: 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif;
+    color: #555;
+}
+
+.invoice-box table {
+    width: 100%;
+    line-height: inherit;
+    text-align: left;
+}
+
+.invoice-box table td {
+    padding: 5px;
+    vertical-align: middle;
+}
+
+.invoice-box table tr td:nth-child(2) {
+    text-align: right;
+}
+
+.right {
+  text-align: right;
+}
+
+.invoice-box table tr.top table td {
+    padding-bottom: 20px;
+}
+
+.invoice-box table tr.top table td.title {
+    font-size: 45px;
+    line-height: 45px;
+    color: #333;
+}
+
+.invoice-box table tr.information table td {
+    padding-bottom: 40px;
+}
+
+.invoice-box table tr.heading td {
+    background: #eee;
+    border-bottom: 1px solid #ddd;
+    font-weight: bold;
+}
+
+.invoice-box table tr.details td {
+    padding-bottom: 20px;
+}
+
+.invoice-box table tr.item td{
+    border-bottom: 1px solid #eee;
+}
+
+.invoice-box table tr.item.last td {
+    border-bottom: none;
+}
+
+.invoice-box h3 {
+  position: fixed;
+  width: 90%;
+  margin-top: 400px;
+  margin-bottom: 100px;
+  margin-right: 50px;
+  margin-left: 10px;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.invoice-box .fix{
+  position: fixed;
+  width: 70%;
+  height: 70%;
+  margin-top: 570px;
+  margin-bottom: 100px;
+  margin-right: 30px;
+  margin-left: 70px;
+  text-align: center;
+}
+
+
+.footer {
+  position:fixed;
+   left:0px;
+   bottom: -560px;
+   height:50px;
+   width:100%;
+   text-align: center;
+   background-color: grey;
+}
